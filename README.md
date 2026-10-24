@@ -1,2 +1,2 @@
 # micheltshiepela331-gif.github.io
- Journal de caisse du Shop Rédemption
+ Site officiel de LushiPratique — la technologie au service de la cité.
