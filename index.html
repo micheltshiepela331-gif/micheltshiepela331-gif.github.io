@@ -698,6 +698,7 @@ footer a{color:var(--muted)}
  function sel(el){try{var r=document.createRange(); r.selectNodeContents(el); var s=getSelection(); s.removeAllRanges(); s.addRange(r);}catch(e){}}
  $$("[data-copy]").forEach(function(b){b.addEventListener("click",function(){var el=document.getElementById(b.getAttribute("data-copy")), t=el.textContent; var done=function(x){b.textContent=x; setTimeout(function(){b.textContent="Copier"},2000)}; try{navigator.clipboard.writeText(t).then(function(){done("Copié ✓")},function(){sel(el); done("Sélectionné")})}catch(e){sel(el); done("Sélectionné")}})});
 })();
+</script>
 <section style="max-width:900px;margin:30px auto;padding:0 16px;font-family:sans-serif">
  <h2 style="text-align:center">Télécharger nos applications</h2>
  <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center">
@@ -715,6 +716,6 @@ footer a{color:var(--muted)}
   </div>
  </div>
  <p style="text-align:center;color:#777;font-size:13px">À l'installation, Android peut demander d'autoriser les « sources inconnues » : c'est normal pour une application hors Play Store.</p>
-</section> </script>
+</section> 
 </body>
 </html>
