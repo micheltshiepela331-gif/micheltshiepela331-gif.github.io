@@ -698,6 +698,23 @@ footer a{color:var(--muted)}
  function sel(el){try{var r=document.createRange(); r.selectNodeContents(el); var s=getSelection(); s.removeAllRanges(); s.addRange(r);}catch(e){}}
  $$("[data-copy]").forEach(function(b){b.addEventListener("click",function(){var el=document.getElementById(b.getAttribute("data-copy")), t=el.textContent; var done=function(x){b.textContent=x; setTimeout(function(){b.textContent="Copier"},2000)}; try{navigator.clipboard.writeText(t).then(function(){done("Copié ✓")},function(){sel(el); done("Sélectionné")})}catch(e){sel(el); done("Sélectionné")}})});
 })();
-</script>
+<section style="max-width:900px;margin:30px auto;padding:0 16px;font-family:sans-serif">
+ <h2 style="text-align:center">Télécharger nos applications</h2>
+ <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center">
+  <div style="flex:1;min-width:260px;border:1px solid #ddd;border-radius:14px;padding:16px;background:#fff">
+   <h3 style="margin:0 0 6px">Kalamu</h3>
+   <p style="margin:0 0 12px;color:#555">Traitement de texte pour les étudiants.</p>
+   <a href="https://github.com/micheltshiepela331-gif/KALAMU/releases/latest/download/kalamu.apk" style="display:inline-block;padding:10px 16px;background:#e8590c;color:#fff;border-radius:10px;text-decoration:none;font-weight:bold;margin:4px 0">⬇ Télécharger (Android)</a>
+   <a href="https://micheltshiepela331-gif.github.io/KALAMU/" style="display:inline-block;padding:10px 16px;border:2px solid #e8590c;color:#e8590c;border-radius:10px;text-decoration:none;font-weight:bold;margin:4px 0">Ouvrir en ligne</a>
+  </div>
+  <div style="flex:1;min-width:260px;border:1px solid #ddd;border-radius:14px;padding:16px;background:#fff">
+   <h3 style="margin:0 0 6px">Lushi Plan</h3>
+   <p style="margin:0 0 12px;color:#555">Plans de maisons en 2D, 3D et 4D, métré et coûts.</p>
+   <a href="https://github.com/micheltshiepela331-gif/Lushi-plan/releases/latest/download/lushi-plan.apk" style="display:inline-block;padding:10px 16px;background:#1971c2;color:#fff;border-radius:10px;text-decoration:none;font-weight:bold;margin:4px 0">⬇ Télécharger (Android)</a>
+   <a href="https://micheltshiepela331-gif.github.io/Lushi-plan/" style="display:inline-block;padding:10px 16px;border:2px solid #1971c2;color:#1971c2;border-radius:10px;text-decoration:none;font-weight:bold;margin:4px 0">Ouvrir en ligne</a>
+  </div>
+ </div>
+ <p style="text-align:center;color:#777;font-size:13px">À l'installation, Android peut demander d'autoriser les « sources inconnues » : c'est normal pour une application hors Play Store.</p>
+</section> </script>
 </body>
 </html>
