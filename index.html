@@ -699,23 +699,27 @@ footer a{color:var(--muted)}
  $$("[data-copy]").forEach(function(b){b.addEventListener("click",function(){var el=document.getElementById(b.getAttribute("data-copy")), t=el.textContent; var done=function(x){b.textContent=x; setTimeout(function(){b.textContent="Copier"},2000)}; try{navigator.clipboard.writeText(t).then(function(){done("Copié ✓")},function(){sel(el); done("Sélectionné")})}catch(e){sel(el); done("Sélectionné")}})});
 })();
 </script>
-<section style="max-width:900px;margin:30px auto;padding:0 16px;font-family:sans-serif">
+ <section style="max-width:900px;margin:30px auto;padding:0 16px;font-family:sans-serif">
  <h2 style="text-align:center">Télécharger nos applications</h2>
  <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center">
-  <div style="flex:1;min-width:260px;border:1px solid #ddd;border-radius:14px;padding:16px;background:#fff">
-   <h3 style="margin:0 0 6px">Kalamu</h3>
-   <p style="margin:0 0 12px;color:#555">Traitement de texte pour les étudiants.</p>
-   <a href="https://github.com/micheltshiepela331-gif/KALAMU/releases/latest/download/kalamu.apk" style="display:inline-block;padding:10px 16px;background:#e8590c;color:#fff;border-radius:10px;text-decoration:none;font-weight:bold;margin:4px 0">⬇ Télécharger (Android)</a>
-   <a href="https://micheltshiepela331-gif.github.io/KALAMU/" style="display:inline-block;padding:10px 16px;border:2px solid #e8590c;color:#e8590c;border-radius:10px;text-decoration:none;font-weight:bold;margin:4px 0">Ouvrir en ligne</a>
+  <div style="flex:1;min-width:260px;border:1px solid #ddd;border-radius:14px;overflow:hidden;background:#fff">
+   <svg viewBox="0 0 320 140" style="display:block;width:100%;height:auto"><defs><linearGradient id="gk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8a1f"/><stop offset="1" stop-color="#d9480f"/></linearGradient></defs><rect width="320" height="140" fill="url(#gk)"/><rect x="34" y="22" width="78" height="100" rx="6" fill="#fff"/><path d="M46 42h54M46 54h54M46 66h40M46 78h54M46 90h30" stroke="#ffb27a" stroke-width="5" stroke-linecap="round"/><path d="M118 104l40-40 10 10-40 40-14 4z" fill="#fff"/><path d="M158 64l6-6 10 10-6 6z" fill="#ffd8b8"/><text x="190" y="74" fill="#fff" font-size="30" font-weight="bold" font-family="sans-serif">Kalamu</text><text x="191" y="98" fill="#fff" font-size="13" font-family="sans-serif" opacity=".9">Écrire comme sur ordinateur</text></svg>
+   <div style="padding:16px">
+    <p style="margin:0 0 12px;color:#555">Traitement de texte pour les étudiants.</p>
+    <a href="https://github.com/micheltshiepela331-gif/KALAMU/releases/latest/download/kalamu.apk" style="display:inline-block;padding:10px 16px;background:#e8590c;color:#fff;border-radius:10px;text-decoration:none;font-weight:bold;margin:4px 0">⬇ Télécharger (Android)</a>
+    <a href="https://micheltshiepela331-gif.github.io/KALAMU/" style="display:inline-block;padding:10px 16px;border:2px solid #e8590c;color:#e8590c;border-radius:10px;text-decoration:none;font-weight:bold;margin:4px 0">Ouvrir en ligne</a>
+   </div>
   </div>
-  <div style="flex:1;min-width:260px;border:1px solid #ddd;border-radius:14px;padding:16px;background:#fff">
-   <h3 style="margin:0 0 6px">Lushi Plan</h3>
-   <p style="margin:0 0 12px;color:#555">Plans de maisons en 2D, 3D et 4D, métré et coûts.</p>
-   <a href="https://github.com/micheltshiepela331-gif/Lushi-plan/releases/latest/download/lushi-plan.apk" style="display:inline-block;padding:10px 16px;background:#1971c2;color:#fff;border-radius:10px;text-decoration:none;font-weight:bold;margin:4px 0">⬇ Télécharger (Android)</a>
-   <a href="https://micheltshiepela331-gif.github.io/Lushi-plan/" style="display:inline-block;padding:10px 16px;border:2px solid #1971c2;color:#1971c2;border-radius:10px;text-decoration:none;font-weight:bold;margin:4px 0">Ouvrir en ligne</a>
+  <div style="flex:1;min-width:260px;border:1px solid #ddd;border-radius:14px;overflow:hidden;background:#fff">
+   <svg viewBox="0 0 320 140" style="display:block;width:100%;height:auto"><rect width="320" height="140" fill="#0b4f8a"/><path d="M0 20h320M0 40h320M0 60h320M0 80h320M0 100h320M0 120h320M20 0v140M40 0v140M60 0v140M80 0v140M100 0v140M120 0v140M140 0v140M160 0v140" stroke="#ffffff" stroke-opacity=".12"/><rect x="26" y="24" width="120" height="92" fill="none" stroke="#fff" stroke-width="6"/><path d="M86 24v40M86 84v32M26 70h40" stroke="#fff" stroke-width="4"/><path d="M46 116a20 20 0 0 1 20-20" fill="none" stroke="#ffd43b" stroke-width="2.5"/><path d="M100 116v-18" stroke="#4dd4ff" stroke-width="5"/><path d="M26 130h120" stroke="#69db7c" stroke-width="2"/><text x="166" y="72" fill="#fff" font-size="28" font-weight="bold" font-family="sans-serif">Lushi Plan</text><text x="167" y="96" fill="#fff" font-size="13" font-family="sans-serif" opacity=".9">Plans 2D, 3D et 4D</text></svg>
+   <div style="padding:16px">
+    <p style="margin:0 0 12px;color:#555">Plans de maisons, métré et coûts.</p>
+    <a href="https://github.com/micheltshiepela331-gif/Lushi-plan/releases/latest/download/lushi-plan.apk" style="display:inline-block;padding:10px 16px;background:#1971c2;color:#fff;border-radius:10px;text-decoration:none;font-weight:bold;margin:4px 0">⬇ Télécharger (Android)</a>
+    <a href="https://micheltshiepela331-gif.github.io/Lushi-plan/" style="display:inline-block;padding:10px 16px;border:2px solid #1971c2;color:#1971c2;border-radius:10px;text-decoration:none;font-weight:bold;margin:4px 0">Ouvrir en ligne</a>
+   </div>
   </div>
  </div>
  <p style="text-align:center;color:#777;font-size:13px">À l'installation, Android peut demander d'autoriser les « sources inconnues » : c'est normal pour une application hors Play Store.</p>
-</section> 
+</section>
 </body>
 </html>
